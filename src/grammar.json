@@ -14044,8 +14044,15 @@
                 "name": "razor_implicit_expression"
               },
               {
-                "type": "PATTERN",
-                "value": "[^\"@]+"
+                "type": "TOKEN",
+                "content": {
+                  "type": "PREC",
+                  "value": -1,
+                  "content": {
+                    "type": "PATTERN",
+                    "value": "[^\"@]+"
+                  }
+                }
               }
             ]
           }
@@ -14093,8 +14100,13 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "_html_attribute_name"
+          "type": "ALIAS",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_html_attribute_name"
+          },
+          "named": true,
+          "value": "html_attribute_name"
         },
         {
           "type": "STRING",

@@ -2657,6 +2657,10 @@
           "named": true
         },
         {
+          "type": "html_attribute_name",
+          "named": true
+        },
+        {
           "type": "html_comment",
           "named": true
         },
@@ -3459,6 +3463,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "html_attribute_name",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "html_comment",

@@ -487,7 +487,7 @@ module.exports = grammar(CSHARP, {
       seq('"', optional($.modifier), $.expression, '"'),
 
     _html_attribute: ($) =>
-      seq($._html_attribute_name, "=", $._html_attribute_value),
+      seq(alias($._html_attribute_name, $.html_attribute_name), "=", $._html_attribute_value),
 
     razor_html_attribute: ($) =>
       seq($.razor_attribute_name, optional(seq("=", $.razor_attribute_value))),
