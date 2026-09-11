@@ -17,7 +17,9 @@ HTML with attributes
 ----
 
 (compilation_unit
-  (element))
+  (element
+    (html_attribute_name)
+    (html_attribute_name)))
 
 ===========
 Attribute name with space
@@ -27,7 +29,8 @@ Attribute name with space
 ----
 
 (compilation_unit
-  (element))
+  (element
+    (html_attribute_name)))
 
 =========
 Self Closing Tag
@@ -36,7 +39,9 @@ Self Closing Tag
 ----
 
 (compilation_unit
-  (element))
+  (element
+    (html_attribute_name)
+    (html_attribute_name)))
 
 ====
 self closing image tag
@@ -45,7 +50,8 @@ self closing image tag
 ----
 
 (compilation_unit
-  (element))
+  (element
+    (html_attribute_name)))
 
 ===
 HTML boolean attribute
@@ -55,7 +61,8 @@ HTML boolean attribute
 ---
 
 (compilation_unit
-  (element))
+  (element
+    (html_attribute_name)))
 
 ===
 complex html

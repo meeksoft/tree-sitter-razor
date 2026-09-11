@@ -198,6 +198,7 @@ Implicit Expression in attribute value
 
 (compilation_unit
   (element
+    (html_attribute_name)
     (razor_implicit_expression
       (boolean_literal))))
 
@@ -209,6 +210,7 @@ Explicit Expression in attribute value
 
 (compilation_unit
   (element
+    (html_attribute_name)
     (razor_explicit_expression
       (parenthesized_expression
         (string_literal

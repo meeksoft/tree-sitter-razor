@@ -50,7 +50,8 @@ CSharp in HTML attribute - String(Semantic Highlighting does the rest)
 ----
 
 (compilation_unit
-  (element))
+  (element
+    (html_attribute_name)))
 
 ======
 HTML Attribute of empty string
@@ -60,7 +61,8 @@ HTML Attribute of empty string
 ----
 
 (compilation_unit
-  (element))
+  (element
+    (html_attribute_name)))
 
 ===
 razor section
@@ -73,7 +75,9 @@ razor section
 (compilation_unit
   (razor_section
     (identifier)
-    (element)))
+    (element
+      (html_attribute_name)
+      (html_attribute_name))))
 
 ======
 form html attribute with value
@@ -134,6 +138,7 @@ Mixed text and Razor expression in HTML attribute
 
 (compilation_unit
   (element
+    (html_attribute_name)
     (razor_explicit_expression
       (parenthesized_expression
         (conditional_expression

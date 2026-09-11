@@ -476,7 +476,7 @@ module.exports = grammar(CSHARP, {
           choice(
             $.razor_explicit_expression,
             $.razor_implicit_expression,
-            /[^"@]+/,
+            token(prec(-1, /[^"@]+/)),
           ),
         ),
         '"',

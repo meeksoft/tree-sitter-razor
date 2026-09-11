@@ -33,9 +33,11 @@ Counter Page
   (element)
   (element)
   (element
+    (html_attribute_name)
     (razor_implicit_expression
       (identifier)))
   (element
+    (html_attribute_name)
     (razor_html_attribute
       (razor_attribute_name)
       (razor_attribute_value
@@ -142,6 +144,7 @@ else
       (element))
     (razor_else
       (element
+        (html_attribute_name)
         (element
           (element
             (element)
@@ -553,6 +556,7 @@ Person? secondAuthor)
               (argument
                 (identifier))))))))
   (element
+    (html_attribute_name)
     (razor_explicit_expression
       (parenthesized_expression
         (conditional_expression
@@ -565,23 +569,42 @@ Person? secondAuthor)
             (string_literal_content))
           (string_literal))))
     (element
+      (html_attribute_name)
       (element
+        (html_attribute_name)
+        (html_attribute_name)
         (razor_implicit_expression
-          (identifier))
+          (member_access_expression
+            (identifier)
+            (identifier)))
+        (html_attribute_name)
         (razor_implicit_expression
-          (identifier)))
+          (member_access_expression
+            (identifier)
+            (identifier)))
+        (html_attribute_name))
       (razor_if
         (razor_condition
           (binary_expression
             (identifier)
             (null_literal)))
         (element
+          (html_attribute_name)
+          (html_attribute_name)
           (razor_implicit_expression
-            (identifier))
+            (member_access_expression
+              (identifier)
+              (identifier)))
+          (html_attribute_name)
           (razor_implicit_expression
-            (identifier)))))
+            (member_access_expression
+              (identifier)
+              (identifier)))
+          (html_attribute_name))))
     (element
+      (html_attribute_name)
       (element
+        (html_attribute_name)
         (razor_explicit_expression
           (parenthesized_expression
             (conditional_expression
@@ -597,6 +620,7 @@ Person? secondAuthor)
                 (identifier)
                 (identifier))))))
       (element
+        (html_attribute_name)
         (razor_if
           (razor_condition
             (binary_expression
